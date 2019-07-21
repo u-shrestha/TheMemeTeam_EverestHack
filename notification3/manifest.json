@@ -1,0 +1,14 @@
+{
+  "name": "Notification",
+  "version": "1.0",
+  "description":
+    "Shows off desktop notifications.",
+  "icons": {"16": "logo.png"},
+  "permissions": [
+    "notifications"
+
+  ],
+  "options_page": "index.html",
+  "background": { "scripts": ["call.js"], "persistent" : true},
+  "manifest_version": 2
+}

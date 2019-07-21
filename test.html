@@ -10,6 +10,7 @@
     <div id = "count"></div>
     
     <script>
+        var count;
         window.onload = function() {
             fetchData()
         }
@@ -19,7 +20,8 @@ function fetchData() {
             postsArr.push(data)
             // document.getElementById('count').innerHTML = postsArr.length
             var content = document.getElementById("count").innerHTML;
-            document.getElementById("count").innerHTML= postsArr.length; 
+            count = document.getElementById("count").innerHTML= postsArr.length; 
+            count = count + 1; 
         });
     }
 
